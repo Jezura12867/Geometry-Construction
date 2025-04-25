@@ -1,5 +1,16 @@
-This project is gonna convert geometric design into what you would draw in person.
-So it's just a maths cheat, but on a computer. However !!! DO NOT DO THIS TO COMPLETE SCHOOL WORK/HOMEWORK !!!
-This is just a passion project
+Purpose of program in desc.
+
+If you want to use this program:
+
+-Use the same syntax, that you'd use in geometry (e. g.:
+
+1) AB; |AB| = 5 cm
+2) k; k(A; 5 cm)
+END
+
+)
+-Enter in code (will add prompt, for now, you don't have to wait)
+-Do not seperate lines with Ctr+Enter, simply use Enter
+-When you are finished, type "END"
 
 Okay Byee!
