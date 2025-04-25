@@ -43,7 +43,7 @@ class Parser:
                 prev_i = i
                 continued_inp += i
                     
-        inp.append(continued_inp)
+        inp.append(continued_inp.strip())
     inp.pop(len(inp) - 1)
 
 
