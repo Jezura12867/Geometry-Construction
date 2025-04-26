@@ -7,7 +7,7 @@ If you want to use this program:
 1) AB; |AB| = 5 cm
 2) k; k(A; 5 cm)
 
-END
+  END
 
 )
 
