@@ -9,6 +9,7 @@ direct_input = ""
 prev_i = ""
 inp = []
 out = []
+distance_amplifier = 10
 
 # Parses  ⊙.⊙
 class Parser:
@@ -26,10 +27,10 @@ class Parser:
     while direct_input != "END":
     #Takes your input
         direct_input = input()
+        continued_inp = ""
 
         # Removes closing brackets
         if ")" in direct_input:
-            continued_inp = ""
             for i in direct_input:
 
                 if direct_input[0] == i and is_number(i) == True:
@@ -46,6 +47,16 @@ class Parser:
         inp.append(continued_inp.strip())
     inp.pop(len(inp) - 1)
 
+class Reading:
+    for i in inp:
+        for i2 in range(len(i)):
+            print(i2)
+            if i[i2] == "=":
+                turtle.left(180)
+                print(i)
+                turtle.forward(int(i[(i2 + 2)]) / 2 * distance_amplifier)
+                turtle.left(180)
+                turtle.forward(int(i[(i2 + 2)]) * distance_amplifier)
 
 print(inp)
 
