@@ -47,16 +47,22 @@ class Parser:
         inp.append(continued_inp.strip())
     inp.pop(len(inp) - 1)
 
-class Reading:
+typeinp = []
+
+class DefiningTypes:
     for i in inp:
         for i2 in range(len(i)):
-            print(i2)
-            if i[i2] == "=":
-                turtle.left(180)
-                print(i)
-                turtle.forward(int(i[(i2 + 2)]) / 2 * distance_amplifier)
-                turtle.left(180)
-                turtle.forward(int(i[(i2 + 2)]) * distance_amplifier)
+            if i[i2] == "|" and i2 == 4:
+                if i[i2 + 7] != "|":
+                    typeinp.append("number line")
+                else:
+                    typeinp.append("comparison line")
+            elif i[i2] == "(" and i2 == 4:
+                typeinp.append("circle")
+            elif i[i2] == ";" and i2 == 1:
+                typeinp.append("angle")
+            elif i2  == 4:
+                print(i[i2])
 
 print(inp)
-
+print(typeinp)
